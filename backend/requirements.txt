@@ -1,0 +1,43 @@
+# ===================================
+# 100% OPEN SOURCE AI TEST CASE GENERATOR
+# No OpenAI or proprietary dependencies
+# ===================================
+
+# Core LangChain (open source)
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.3.0
+
+# Web framework
+flask==2.3.3
+flask-cors==4.0.0
+
+# Local LLM integration (open source)
+ollama>=0.5.1
+
+# Vector database (open source)
+faiss-cpu==1.11.0
+
+# HuggingFace embeddings (open source)
+sentence-transformers>=2.2.0
+transformers>=4.21.0
+
+# NLP for smart acceptance criteria parsing
+spacy>=3.8.0
+
+# Basic scientific computing
+numpy>=1.24.0
+
+# ===================================
+# ARCHITECTURE:
+# - Embeddings: HuggingFace (sentence-transformers)
+# - LLM: Ollama (llama2)
+# - Vector Store: FAISS
+# - NLP Parsing: spaCy (en_core_web_sm)
+# - All components run locally
+# - No external API calls
+# - No proprietary dependencies
+# ===================================
+
+# POST-INSTALL COMMANDS:
+# python -m spacy download en_core_web_sm
