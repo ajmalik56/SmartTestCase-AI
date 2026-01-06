@@ -32,7 +32,7 @@ AITestCaseGenerator/
 ## 🛠️ Prerequisites
 
 - Python 3.8+
-- [Ollama](https://ollama.ai/) installed and running
+
 - Git (for version control)
 
 ### Ollama Models Required
@@ -59,10 +59,7 @@ AITestCaseGenerator/
    pip install -r requirements.txt
    ```
 
-4. **Install and start Ollama**
-   ```bash
-   # Install Ollama (macOS)
-   brew install ollama
+
    
    # Start Ollama service
    ollama serve
@@ -87,7 +84,7 @@ source venv/bin/activate
 python app.py
 ```
 
-The server will start on `http://localhost:5000`
+
 
 ### API Endpoints
 
@@ -124,7 +121,7 @@ The FAISS vector store automatically processes documents from the `knowledge_bas
 Create a `.env` file in the backend directory:
 
 ```env
-OLLAMA_BASE_URL=http://localhost:11434
+
 VECTOR_STORE_PATH=./vector_store
 KNOWLEDGE_BASE_PATH=./knowledge_base
 CHUNK_SIZE=1000
@@ -137,7 +134,7 @@ Ensure Ollama is running and accessible:
 
 ```bash
 # Check Ollama status
-curl http://localhost:11434/api/tags
+
 
 # Test model availability
 ollama list
@@ -151,8 +148,7 @@ The system tracks token usage for cost monitoring:
 
 ```bash
 # View token usage statistics
-curl http://localhost:5000/health
-```
+
 
 ### Vector Store Statistics
 
@@ -195,9 +191,6 @@ for doc in results:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Troubleshooting
 
@@ -235,12 +228,3 @@ For support and questions:
 - Check the troubleshooting section above
 - Review Ollama documentation for LLM-related issues
 
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with basic test case generation
-- **v1.1.0** - Added FAISS vector store integration
-- **v1.2.0** - Enhanced context-aware generation
-
----
-
-**Built with ❤️ using Ollama, FAISS, and Flask**
